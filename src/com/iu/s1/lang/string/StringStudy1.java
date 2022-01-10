@@ -3,49 +3,50 @@ package com.iu.s1.lang.string;
 import java.util.Scanner;
 
 public class StringStudy1 {
-	
+
 	public void subStringEx1() {
 		// 키보드로부터 업로드 할 파일명을 입력
-		//a.txt, b.pdf, iu.jpg ,,,
-		//jpg, gif, png -> 이미지 파일입니다. 출력
-		//txt, pdf, hwp -> 문서 파일입니다. 출력
-		//mp3, wav, ogg -> 음원 파일입니다. 출력
-		//그 외 나머지는 알 수 없는 파일입니다. 출력
-		
+		// a.txt, b.pdf, iu.jpg ,,,
+		// jpg, gif, png -> 이미지 파일입니다. 출력
+		// txt, pdf, hwp -> 문서 파일입니다. 출력
+		// mp3, wav, ogg -> 음원 파일입니다. 출력
+		// 그 외 나머지는 알 수 없는 파일입니다. 출력
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("파일명을 입력해주세요.");
 		String fileName = sc.next();
 
-		String extension = fileName.substring(fileName.lastIndexOf(".")+1);
-		
-		switch(extension) {
-		case "jpg","gif","png" :
+		String extension = fileName.substring(fileName.lastIndexOf(".") + 1);
+
+		switch (extension) {
+		case "jpg", "gif", "png":
 			System.out.println("이미지 파일입니다.");
 			break;
-		case "txt", "pdf", "hwp" :
+		case "txt", "pdf", "hwp":
 			System.out.println("문서 파일입니다.");
 			break;
-		case "mp3", "wav", "ogg" :
+		case "mp3", "wav", "ogg":
 			System.out.println("음원 파일입니다.");
 			break;
-		default :
+		default:
 			System.out.println("알 수 없는 파일입니다.");
-		
+
 		}
 	}
+
 	public void subStringTest() {
 		String title = "West Side Story";
 		String result = title.substring(5);
 		System.out.println(result);
-		result = title.substring(5,9);
+		result = title.substring(5, 9);
 		System.out.println(result);
 	}
-	
+
 	public void lengthTest() {
 		String title = "West Side Story";
 		int len = title.length();
 
-		String find = "z";
+		String find = "S";
 		int count = 0;
 		// title find에 들어가있는 글자가 몇 개 인지 출력
 		for (int i = 0; i < title.length(); i++) {
@@ -66,7 +67,7 @@ public class StringStudy1 {
 	public void indexOfTest() {
 		String msg = "Hello World";
 		// indexOf 호출
-		int num = msg.indexOf(100);
+		int num = msg.indexOf('e');
 		System.out.println(num);
 	}
 
