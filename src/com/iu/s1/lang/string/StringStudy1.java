@@ -3,7 +3,36 @@ package com.iu.s1.lang.string;
 import java.util.Scanner;
 
 public class StringStudy1 {
-
+	
+	public void splitTest() {
+		String name = "iu, suji, choa, 펭수, 춘식이";
+		String [] result = name.split(",");
+		for(int i = 0; i<result.length;i++)
+			System.out.println(result[i].trim());
+		
+	}
+	
+	public void valueTest() {
+		int num = 1000;
+		String result = String.valueOf(num); //static 메서드의 사용법
+		System.out.println(result);
+	}
+	
+	public void caseTest() {
+		String title = "West Side Story";
+		String result1 = title.toLowerCase();
+		String result2 = title.toUpperCase();
+		System.out.println(result1);
+		System.out.println(result2);
+	}
+	
+	public void replaceTest() {
+		String title = "West Side Story";
+		String result = title.replace("West" , "North");
+		System.out.println(title);
+		System.out.println(result);
+	}
+	
 	public void subStringEx1() {
 		// 키보드로부터 업로드 할 파일명을 입력
 		// a.txt, b.pdf, iu.jpg ,,,
