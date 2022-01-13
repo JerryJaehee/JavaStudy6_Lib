@@ -1,4 +1,4 @@
-package com.iu.s3.ex1;
+package com.iu.s3.ex1.member;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -21,9 +21,7 @@ public class MemberData {
 				memberDTO = ar.remove(i);
 				break;
 			}
-
 		}
-
 		return memberDTO;
 	}
 
@@ -69,6 +67,7 @@ public class MemberData {
 			memberDTO.setEmail(st.nextToken().trim());
 			memberDTO.setAge(Integer.parseInt(st.nextToken().trim()));
 			ar.add(memberDTO);
+			
 		}
 		return ar;
 	}

@@ -1,4 +1,4 @@
-package com.iu.s3.ex1;
+package com.iu.s3.ex1.member;
 
 public class MemberDTO {
 	//외부에서 접근 가능하도록 getter setter 만들기

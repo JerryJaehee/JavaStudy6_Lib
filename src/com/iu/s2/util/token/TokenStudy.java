@@ -20,10 +20,9 @@ public class TokenStudy {
 			token = st.nextToken();
 			seasonDTO.setGion(Integer.parseInt(token));
 			ar.add(seasonDTO);
-			System.out.println(seasonDTO.getName());
-			System.out.println(seasonDTO.getGion());
+			
 		}
-		for(int i = 0; i<=ar.size();i++) {
+		for(int i = 0; i<ar.size();i++) {
 			SeasonDTO seasonDTO = ar.get(i);
 			System.out.println(seasonDTO.getName());
 			System.out.println(ar.get(i).getGion());
