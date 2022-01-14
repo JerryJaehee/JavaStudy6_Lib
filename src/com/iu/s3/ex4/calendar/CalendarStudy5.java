@@ -27,6 +27,10 @@ public class CalendarStudy5 {
 		String r = sd.format(ca.getTime());
 		System.out.println(r);
 		
+		pattern = "yyyy-MM-dd (E)";
+		sd.applyPattern(pattern);
+		System.out.println(sd.format(ca.getTime()));
+		
 	}
 
 }
