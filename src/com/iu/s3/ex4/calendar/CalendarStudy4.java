@@ -2,7 +2,7 @@ package com.iu.s3.ex4.calendar;
 
 import java.util.Calendar;
 
-public class Calendar4 {
+public class CalendarStudy4 {
 
 	public static void main(String[] args) {
 		//현재 시간

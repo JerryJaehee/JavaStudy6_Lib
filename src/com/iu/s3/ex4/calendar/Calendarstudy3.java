@@ -18,7 +18,7 @@ public class Calendarstudy3 {
 
 		//2시간 후에 시간
 		Calendar ca2 = Calendar.getInstance();
-		ca2.set(Calendar.HOUR_OF_DAY, 17);
+		ca2.set(Calendar.HOUR_OF_DAY, 23);
 		
 		System.out.println("현재 시간 : "+ca.getTime());
 		System.out.println("2시간 후 시간 : "+ca2.getTime());
@@ -30,7 +30,7 @@ public class Calendarstudy3 {
 		long result = l2 - l1;
 		
 		System.out.println(result);
-		System.out.println(result/(1000*60*60));
+		System.out.println(result/(1000*60*60)); //몇시간 차 
 	}
 
 }
