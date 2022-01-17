@@ -20,7 +20,12 @@ public class ExceptionMain1 {
 			System.out.println("Result : "+result);
 		}catch(InputMismatchException exception) {
 			System.out.println("숫자만 입력하세요");
+		}catch(ArithmeticException exception) {
+			System.out.println("0으로 나눌 수 없어요.");
+		}catch(Exception exception) {
+			System.out.println("알 수 없는 예외 발생");
+		}catch(Throwable exception) {
+			System.out.println("모든 예외는 여기서 처리");
 		}
 	}
-
 }
