@@ -6,7 +6,9 @@ public class CollectionMain {
 //		ListStudy ls = new ListStudy();
 //		List<Stirng> ar = ls.study4();
 		
-		new MapStudy().study1();
+	//	new MapStudy().study1();
+		
+		new ListStudy().study1();
 	}
 
 }
